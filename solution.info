@@ -1,0 +1,6 @@
+; $Id$
+name = Solution API
+description = Module provides solution install and solution update drush commands
+core = 6.x
+package = "Drush"
+version = "6.x-1.x-dev"
