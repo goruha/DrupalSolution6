@@ -85,7 +85,7 @@ function drush_solution_install() {
   }
 
   if (module_exists('panels')) {
-    drush_print(dt('------------------------------- Revert panels pages - START'));
+    /** drush_print(dt('------------------------------- Revert panels pages - START'));
     drush_invoke_process('@self', 'panels-pages-delete-all', array(), array('#integrate' => TRUE));
     drush_print(dt('------------------------------- Revert panels pages - FINISH'));
 
@@ -100,6 +100,7 @@ function drush_solution_install() {
     drush_print(dt('------------------------------- Revert panels layouts - START'));
     drush_invoke_process('@self', 'panels-layouts-revert-all', array(), array('#integrate' => TRUE));
     drush_print(dt('------------------------------- Revert panels layouts - FINISH'));
+    **/
   }
 
   if (module_exists('imagecache')) {
